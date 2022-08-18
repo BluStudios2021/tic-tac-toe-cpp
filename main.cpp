@@ -192,7 +192,7 @@ int main(void)
       DrawRectangle(0, 0, 600, 208, BLACK);
       DrawRectangle(0, 208, 600, 600, GRAY);
 
-      if (selectPos[0] >= 0 && selectPos[1] >= 0) {
+      if (won < 0 && selectPos[0] >= 0 && selectPos[1] >= 0) {
         DrawRectangle(0 + 196 * selectPos[0], 208 + 196 * selectPos[1], 208, 208, LIGHTGRAY);
       }
 
